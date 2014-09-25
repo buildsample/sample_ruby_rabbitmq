@@ -7,6 +7,12 @@ env:
 
 services:
   - rabbitmq
+
+   
 notifications:
-  email:
-    - buildsampletest@gmail.com
+     email:
+         recipients:
+              - buildsampletest@gmail.com
+             - vidya@shippable.com
+         on_success: always
+         on_failure: always  
